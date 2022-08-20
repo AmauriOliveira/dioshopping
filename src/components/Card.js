@@ -1,7 +1,8 @@
 import React from 'react';
 import { Paper, Grid, Typography, Button, makeStyles } from '@material-ui/core/';
 import { useSelector, useDispatch } from 'react-redux';
-import cartActions from './store/actions/cart';
+import { } from './store/actions/cart';
+import { Add } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -31,7 +32,7 @@ const Card = ({ product, children }) => {
 
                     <Button
                         variant="contained"
-                        onClick={() => dispatch(cartActions.Add(cart, product))}
+                        onClick={() => dispatch(Add(cart, product))}
                     >
                         Adicionar
                     </Button>

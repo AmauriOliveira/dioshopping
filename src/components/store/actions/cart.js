@@ -37,7 +37,7 @@ const ChangeCart = (localCart) => {
     }
 }
 
-export default {
+export {
     Add,
     AddItem,
     RemoveItem,
