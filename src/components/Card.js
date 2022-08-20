@@ -1,8 +1,7 @@
 import React from 'react';
 import { Paper, Grid, Typography, Button, makeStyles } from '@material-ui/core/';
 import { useSelector, useDispatch } from 'react-redux';
-import { } from './store/actions/cart';
-import { Add } from '@material-ui/icons';
+import { Add } from './store/actions/cart';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
