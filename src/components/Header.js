@@ -4,7 +4,7 @@ import { Grid, Typography, Button } from '@material-ui/core/';
 import Cart from './Cart';
 
 const Header = () => {
-    return(
+    return (
         <Grid container direction="row" justify="space-between" alignItems="center" xs={12}>
             <Typography variant='h3'>
                 Dio Shopping
@@ -15,9 +15,7 @@ const Header = () => {
             <Link to="/contato">
                 <Button color="primary">Contato</Button>
             </Link>
-            <Cart />   
-
-            
+            <Cart />
         </Grid>
     )
 }

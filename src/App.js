@@ -6,21 +6,21 @@ import { Container } from '@material-ui/core/';
 import Header from './components/Header';
 
 const App = () => {
-  
+
   const localCart = JSON.parse(localStorage.getItem('dioshopping: cart'))
-  
-  if(localCart !== null) {
-    store.dispatch({type: 'CHANGE_CART', localCart})
+
+  if (localCart !== null) {
+    store.dispatch({ type: 'CHANGE_CART', localCart })
   }
-  
-  return(
+
+  return (
     <Provider store={store}>
       <Container maxWidth="xl">
         <Router>
           <Header />
           <Routes />
         </Router>
-      </Container> 
+      </Container>
     </Provider>
   )
 }
